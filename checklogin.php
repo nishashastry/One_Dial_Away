@@ -7,7 +7,7 @@
 <body>
 <?php
 if ($_SESSION['login'] == 1) {
-    header('location: call.php');
+    header('location: aftercall.php');
 }else {
     header('location: login.php');
 }?>

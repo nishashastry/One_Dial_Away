@@ -12,7 +12,6 @@
     <div class="dropdown-content">
 	  <a href="home.php">home</a>
       <a href="about.php">about</a>
-      <a href="map.php">map</a>
       <a href="setting.php">setting</a>
     </div>
   </div> 

@@ -18,7 +18,6 @@ $_SESSION['login']=0;?>
     <div class="dropdown-content">
 	  <a href="home.php">home</a>
       <a href="about.php">about</a>
-      <a href="map.php">map</a>
       <a href="setting.php">setting</a>
     </div>
   </div> 
@@ -26,7 +25,7 @@ $_SESSION['login']=0;?>
 </div>
 
 <div class="container">
-  <button class="CallButton"><a href="checklogin.php">call for help</a></button>
+  <button class="CallButton" ><a href="checklogin.php">call for help</a></button>
 </div>
 
 </body>
