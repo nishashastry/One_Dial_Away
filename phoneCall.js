@@ -8,7 +8,7 @@ function twilioCall(){
     
     client.calls
           .create({
-             url: 'http://demo.twilio.com/docs/voice.xml',
+             twiml: '<Response><Say voice="alice">Hi!</Say><Pause length="1"/><Say voice="alice">Are you busy right now? I really need your help</Say><Pause length="1"/><Say voice="alice">Can you come over to my house right now its super urgent</Say><Pause length="2"/></Response>',
              to: '+14258983356',
              from: '+12534001759'
            })
