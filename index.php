@@ -7,6 +7,10 @@
 </header>
 
 <body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 <?php
 session_start();
 $_SESSION['login']=0;?>
@@ -21,11 +25,11 @@ $_SESSION['login']=0;?>
       <a href="setting.php">setting</a>
     </div>
   </div> 
-  <h3> 1dialaway </h3>
+  <a> 1dialaway </a>
 </div>
 
 <div class="container">
-  <button class="CallButton" ><a href="checklogin.php">call for help</a></button>
+  <button class="CallButton" ><a style="text-decoration:none;" href="checklogin.php">call for help</a></button>
 </div>
 
 </body>

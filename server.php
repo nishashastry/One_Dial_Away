@@ -38,7 +38,7 @@ if (isset($_POST['reg_user'])) {
 
   if (count($errors) == 0) {
   	$password = md5($password_1);
-  	$query = "INSERT INTO users (username, tel, password) 
+  	$query = "INSERT INTO user (username, tel, password) 
   			  VALUES('$username', '$tel', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
@@ -76,7 +76,7 @@ if (isset($_POST['login_user'])) {
   		array_push($errors, "Wrong username/password combination");
   	}
   }
+  $_SESSION['login'] = 1;
+  	  header('Location: home.php');
 }
-
-
 ?>

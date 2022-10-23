@@ -10,6 +10,9 @@
 
 	
 <body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="indexstyle.css">
 <div class="navbar">
   <div class="dropdown">
@@ -20,7 +23,7 @@
       <a href="setting.php">setting</a>
     </div>
   </div> 
-  <h3> 1dialaway </h3>
+  <a> 1dialaway </a>
 </div>
 	
   <div class="header">register</div>

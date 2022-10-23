@@ -6,7 +6,9 @@
 
 <body>
 <link rel="stylesheet" href="setting.css">
-<link rel="stylesheet" href="indexstyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <div class="navbar">
   <div class="dropdown">
     <button class="dropbtn">&#9776;</button>
@@ -16,27 +18,38 @@
       <a href="setting.php">setting</a>
     </div>
   </div> 
-  <h3> 1dialaway </h3>
+  <a> 1dialaway </a>
 </div>
 
 <div class="card">
   <div class="container">
     <h4><b>account</b></h4>
-	<p>username: </p>
+	<p>username: <?php session_start(); echo $_SESSION['username'] ?></p> 
 	<p>password: </p>
-	<p>phone number: </p>
-	<button>edit</button>
+	<p>phone number: </p> 
+	<button>log out</button> 
   </div>
 </div>
 
 <div class="card">
   <div class="container">
     <h4><b>my call</b></h4>
-    <p>question 1</p>
-	<p>question 2</p>
-	<p>question 3</p>
-	<p>question 4</p>
-	<p>question 5</p>
+	<?php
+		$sql_query="SELECT * FROM user WHERE username='$username'";
+		$result=mysqli_query($db,$sql_query);
+		
+		echo"<table class='styled-table table-hover'>
+			<thead>
+			<tr>
+			<td>questions</td>
+			</tr>
+			</thead>
+			<tbody>";
+		while($row=mysqli_fetch_assoc($result)){
+			echo "<tr>
+					<td>".$row['questions']."</td>
+					</tr>";
+				}?>
 	<button onclick="">edit</button>
   </div>
 </div>

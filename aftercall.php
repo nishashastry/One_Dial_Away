@@ -19,11 +19,9 @@
 </div>
 
 <form method='post' action='aftercallpost.php'>
-	<label for="location"> location</label>
-	<input type="text" id="location" name="location"><br>
-	<label for="situation"> situation</label>
-	<input type="text" id="situation" name="situation" style="height:100px"><br>
-	<input type="submit">
+	<p>hope this call helped you</p><br>
+	<p>not helping?</p>
+	<a href="setting.php">change the call content</a> 
 </form>
 
 </div>

@@ -4,6 +4,9 @@
 </header>
 
 <body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="indexstyle.css">
 <link rel="stylesheet" href="login.css">
 <div class="navbar">
@@ -15,7 +18,7 @@
       <a href="setting.php">setting</a>
     </div>
   </div> 
-  <h3> 1dialaway </h3>
+  <a> 1dialaway </a>
 </div>
 
 <form method='post' action='server.php'>
