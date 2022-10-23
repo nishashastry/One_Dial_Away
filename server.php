@@ -76,6 +76,8 @@ if (isset($_POST['login_user'])) {
   		array_push($errors, "Wrong username/password combination");
   	}
   }
+  $_SESSION['login'] = 1;
+  	  header('Location: home.php');
 }
 
 
